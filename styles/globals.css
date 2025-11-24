@@ -1,0 +1,144 @@
+/* Full-screen container */
+.calculator-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  background: linear-gradient(to bottom right, #e9d5ff, #eff6ff, #d1fae5);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Calculator Card */
+.calculator-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.calculator-card h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  color: #7e22ce;
+  margin-bottom: 2rem;
+}
+
+/* Input */
+/* Make inputs fit inside the card */
+.calculator-card input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: 2px solid #d8b4fe;
+  border-radius: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;  /* Important: include padding and border in width */
+}
+
+
+.calculator-card input[type="text"]:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.3);
+}
+
+/* Button */
+.calculator-card button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(to right, #8b5cf6, #7c3aed);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.calculator-card button:hover {
+  transform: scale(1.05);
+}
+
+/* Container */
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+/* Card Base */
+.output-card {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.output-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Step-by-Step Card */
+.step-card {
+  background-color: #f3e8ff; /* purple-50 */
+  border-left: 6px solid #c084fc; /* purple-400 */
+}
+
+.step-card h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #7c3aed; /* purple-700 */
+  margin-bottom: 1rem;
+}
+
+/* Notebook Style Card */
+.notebook-card {
+  background-color: #ecfdf5; /* green-50 */
+  border-left: 6px solid #34d399; /* green-400 */
+}
+
+.notebook-card h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #059669; /* green-700 */
+  margin-bottom: 1rem;
+}
+
+/* Preformatted text */
+.output-card pre {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-family: monospace;
+  color: #111827; /* gray-900 */
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+
+/* Footer */
+.calculator-card p {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
